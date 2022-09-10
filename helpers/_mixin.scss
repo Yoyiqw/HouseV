@@ -1,0 +1,14 @@
+@mixin flex ($align, $justify, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@mixin font ($weight, $size, $color, $lineHeight: normal) {
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+    line-height: $lineHeight;
+}
+
