@@ -1,0 +1,30 @@
+.hero {
+    
+    &__title {
+        @include font (700, 48px, $text-vanil);
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Playfair Display';
+        padding-top: 200px;
+        max-width: 556px;
+    }
+    &__mouse {
+        margin-top: 70px;
+    }
+
+    &__information {
+        @include font (400, 18px, $text-white);
+        margin-right: 100px;
+    }
+    &__info {
+        text-align: center ;
+        padding: 200px;
+    }
+    &__item {
+        display: flex;
+        margin-left: 90px;
+    }
+    &__icon {
+        margin-right: 18px;
+    }
+}
