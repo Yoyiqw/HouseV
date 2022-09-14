@@ -18,6 +18,7 @@
         align-items: center;
         flex-wrap: wrap;
         margin-top: 25px;
+        padding-left: 388px;
     }
     &__item {
         margin-left: 40px;
@@ -31,10 +32,30 @@
 }
 
 
-@media screen and (max-width:691px) {
+@media screen and (max-width:1100px) {
     .header {
         &__list {
             display: none;
         }
+        
+        &__icon {
+            margin-left: 150px;
+        }
+        &__title{
+            padding: 100px;
+            
+        }
     }
 }
+
+
+@media screen and (max-width:375px) {
+    .header {
+        &__icon{
+            margin-left: 40px;
+        }
+    }
+}
+
+
+

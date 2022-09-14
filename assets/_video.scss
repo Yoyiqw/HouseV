@@ -1,0 +1,35 @@
+.video {
+    &__yt {
+        margin-top: 300px;
+        text-align: center;
+    }
+
+    &__img {
+        position: absolute;
+        top: 2985px;
+        right: 130px;
+    }
+    &_content {
+        position: relative;
+    }
+    &__on {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .video {
+        &__img {
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width:1314px) {
+    .video{
+        &__img {
+        width: 250px;
+        right: 50px;
+    }
+}
+}

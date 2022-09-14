@@ -1,0 +1,88 @@
+.apartments {
+    &__img {
+        position: absolute;
+        top: 1330px;
+        left: 175px;
+    }
+
+    &__title {
+        @include font (700, 36px, $text-vanil);
+        margin-top: 120px;
+    }
+
+    &__bg {
+        margin-top: 100px;
+    }
+
+    &__description {
+        @include font (400, 24px, $text-white);
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        font-family: 'Raleway';
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .apartments {
+        &__img {
+            width: 300px;
+            top: 1330px;
+            left: 23px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .apartments {
+        &__img {
+            width: 300px;
+            top: 1330px;
+            left: 23px
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__item {
+            width: 40%;
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .apartments {
+        &__img {
+            width: 200px;
+            top: 1330px;
+            left: 23px
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .apartments {
+        &__description {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .apartments {
+        &__item{
+            margin: 0 auto;
+        }
+    }
+}

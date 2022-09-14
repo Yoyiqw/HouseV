@@ -1,0 +1,57 @@
+.footer {
+    background: #2D343C;
+    margin-top: 191px;
+
+    &__content {
+        padding-top: 60px;
+    }
+
+    &__link {
+        @include font (400, 14px, $text-white);
+
+    }
+
+    &__row {
+        display: flex;
+        font-family: "Raleway";
+        justify-content: space-between;
+    }
+
+
+    &__item {
+        margin-bottom: 15px;
+    }
+    &__social {
+        margin-right: 20px;
+    }
+    &__more{
+        color: #D4C17F;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .footer {
+        &__icon{
+            margin-left: 20px;
+        }
+        &__item{
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .footer {
+        &__icon{
+            width: 100px;
+            margin-right: 80px;
+        }
+        &__link{
+            font-size: 10px;
+        }
+        &__social{
+            margin: 0 auto;
+        }
+    }
+}

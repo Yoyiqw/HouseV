@@ -1,0 +1,104 @@
+.look {
+    &__bg {
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
+
+    &__title {
+        margin-top: 180px;
+        @include font (700, 36px, $text-vanil);
+        font-family: 'Playfair Display';
+
+    }
+
+    &__description {
+        @include font (400, 16px, $text-white);
+        max-width: 535px;
+        font-family: 'Raleway';
+        margin-top: 50px;
+        line-height: 24px;
+        padding-right: 35px;
+    }
+    
+    &__box{
+        display: flex;
+    }
+
+
+    &__test {
+        width: 50%;
+        gap: 30px;
+        display: flex;
+        align-items: flex-end;
+        align-content: flex-end;
+
+        &-item {
+            width: 255px;
+            padding: 0;
+            border: none;
+            text-align: center;
+            background: #ffffff;
+            opacity: 0.2;
+
+        }
+    }
+    &__more {
+        @include font (400, 13px, $text-darkwhite);
+        width: 255px;
+        text-align: center;
+    }
+
+    &__row {
+        justify-content: space-between;
+    }
+
+    &__view {
+        @include font (700, 16px, $text-white);
+        background: #D4C17F;
+        width: 255px;
+        height: 50px;
+        cursor: pointer;
+        text-align: center;
+        border: none;
+    }
+
+    &__info {
+        @include font (400, 14px, $text-darkwhite);
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width:1440px) {
+    .look {
+        &__title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .look {
+        &__test {
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        &__description {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .look {
+        &__box{
+            display: block;
+        }
+        &__row{
+            margin-left: 40px;
+        }
+    }
+}

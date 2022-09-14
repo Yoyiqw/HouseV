@@ -18,13 +18,82 @@
     }
     &__info {
         text-align: center ;
-        padding: 200px;
+        padding-top: 180px;
+        margin: 0 auto;
+        margin-left: 190px;
     }
     &__item {
         display: flex;
-        margin-left: 90px;
+        margin-left: 67px;
+        font-family: 'Raleway';
     }
     &__icon {
         margin-right: 18px;
+    }
+    &__row{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .hero {
+        &__content {
+            position: relative;
+        }
+        &__img {
+            left: 890px;
+            width: 120px;
+        }
+        &__title {
+            padding-top: 20px;
+        }
+        &__info {
+            padding-top: 60px;
+        }
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .hero {
+        &__content {
+            position: relative;
+        }
+        &__title {
+            padding-top: 100px;
+        }
+        &__info {
+            
+            padding-top: 100px;
+        }
+    }
+}
+
+@media screen and (max-width:769px) {
+    .hero {
+        &__item{
+            margin: 0 auto  ;
+        }
+        &__mouse{
+            font-size: 30px;
+        }
+        &__title{
+            font-size: 30px;
+            padding-top: 24px;
+        }
+        &__information{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .hero {
+        &__info {
+            margin-left: 0;
+        }
+        &__item{
+            margin-left: 35px;
+        }
     }
 }

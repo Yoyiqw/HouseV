@@ -1,0 +1,55 @@
+.map {
+    &__title{
+        @include font (700, 36px, $text-vanil);
+        margin-top: 180px;
+    }
+    &__test{
+        margin-top: 100px;
+        text-align: center;
+    }
+    &__img {
+        position: absolute;
+        top: 3750px;
+        left: 240px;
+    }
+    &__width {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .map{
+        &__img {
+        top: 3750px;
+        left: 48px;
+    }
+}
+}
+
+@media screen and (max-width:1024px) {
+    .map{
+        &__img {
+        top: 3750px;
+        left: 48px;
+        &__title{
+            text-align: center;
+        }
+    }
+}
+}
+
+@media screen and (max-width:768px) {
+    .map{
+        &__title{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .map{
+        &__img {
+            top: 3600px;
+        }
+    }
+}
