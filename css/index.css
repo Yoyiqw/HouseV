@@ -200,6 +200,7 @@ img {
 @media screen and (max-width: 375px) {
   .header__icon {
     margin-left: 40px;
+    width: 100px;
   }
 }
 .hero__title {
@@ -288,6 +289,19 @@ img {
   }
   .hero__item {
     margin-left: 35px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero__title {
+    font-size: 25px;
+  }
+  .hero__mouse {
+    margin-top: 30px;
+    width: 30px;
+  }
+  .hero__information {
+    margin: 0;
+    font-weight: 200;
   }
 }
 .plus__img {
