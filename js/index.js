@@ -86,6 +86,6 @@ for (const room of rooms) {
 for (const start of starts) {
     header.innerHTML += 
     `
-    <li class="header__item"><a href="" class="header__link">${start.link}</a></li>
+    <li class="header__item"><a href=""  class="header__link">${start.link}</a></li>
     `
 }
